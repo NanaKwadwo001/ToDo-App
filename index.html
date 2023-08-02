@@ -10,15 +10,28 @@
     <div class="grid-container">
       <button class="create">CREATE+</button>
       <header class="header"><p class="logo">Todo List</p></header>
-      <aside class="aside hidden in-out-aside">
-        <p class="inbox">Inbox</p>
-        <p class="today">Today</p>
-        <p class="week">This week</p>
+      <aside class="aside in-out-aside">
+        <p class="inbox aside-text">Inbox</p>
+        <p class="today aside-text">Today</p>
+        <p class="week aside-text">This week</p>
 
-        <h3 class="projects">Projects</h3>
-        <p class="addProjects">+ Add Project</p>
+        <h3 class="projects aside-text">Projects</h3>
+        <p class="addProjects aside-text">+ Add Project</p>
       </aside>
-      <main class="main">MAIN</main>
+      <main class="main">
+        <h2 class="main-text">Inbox</h2>
+        <div class="task">
+          <p class="add-task main-text">+ Create Task</p>
+          <p class="main-text">
+            <span class="remove-task">×</span> Bath the Kojo
+          </p>
+        </div>
+        <div class="form">
+          <input type="text" class="task-input" />
+          <button class="add-task-btn">Add</button>
+          <button class="cancel-task-btn">Cancel</button>
+        </div>
+      </main>
       <footer class="footer">FOOTER</footer>
     </div>
     <script src="index.js"></script>

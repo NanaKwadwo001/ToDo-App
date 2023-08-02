@@ -10,7 +10,6 @@
 
 .grid-container {
   height: 100vh;
-
   display: grid;
   grid-template-areas:
     "header"
@@ -24,9 +23,8 @@
   width: 30%;
   height: 100vh;
 }
-
 .hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .create {
@@ -34,25 +32,60 @@
   top: 10px;
   right: 15px;
   padding: 8px;
-  border-radius: ;
+  border-radius: 10px;
+  border: none;
 }
 
 .header {
-  background-color: aqua;
+  background-color: black;
   grid-area: header;
-}
-
-.aside {
-  background-color: blue;
-  grid-area: aside;
   display: flex;
   flex-direction: column;
-  justify-content: space-b;
+  justify-content: center;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+}
+.aside {
+  grid-area: aside;
+  background-color: #adabaef1;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.aside-text {
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+.aside-text:hover {
+  background-color: #636264f1;
+  padding: 3px;
+  transition: all 0.3s;
 }
 
 .main {
-  background-color: brown;
   grid-area: main;
+  background-color: white;
+  padding: 20px 50px;
+}
+.main-text {
+  padding-bottom: 20px;
+}
+.add-task {
+  cursor: pointer;
+}
+.remove-task {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
 }
 
 .footer {
@@ -79,10 +112,38 @@
     height: 100%;
   }
 
-  .hidden {
+  /* .hidden {
     display: block;
-  }
+  } */
   .create {
     display: none;
   }
+}
+
+/* STYLING DOM CREATED ELEMENTS */
+.task-input {
+  display: block;
+  width: 400px;
+  height: 30px;
+}
+.add-task-btn {
+  margin-top: 5px;
+  margin-right: 30px;
+  text-align: center;
+  padding: 5px 5px;
+  height: 40px;
+  width: 100px;
+  background-color: #2ae02a;
+  border: none;
+  font-size: 20px;
+}
+.cancel-task-btn {
+  margin-top: 5px;
+  text-align: center;
+  padding: 5px 5px;
+  height: 40px;
+  width: 100px;
+  background-color: red;
+  border: none;
+  font-size: 20px;
 }
